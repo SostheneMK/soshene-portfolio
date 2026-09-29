@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SK — Galerie</title>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body data-page="gallery">
+        <div data-site-header></div>
+        <main>
+            <section class="page-intro reveal">
+                <p class="eyebrow" data-t="galleryKicker">Galerie</p>
+                <h1 data-text-animate data-t="galleryHeading">Espaces, matières et perspectives.</h1>
+                <p data-t="galleryLead">Une sélection d’images de projets, d’études et d’inspirations architecturales.</p>
+            </section>
+            <section class="gallery-section">
+                <div class="gallery-filters">
+                    <button class="is-active" data-filter="all" data-t="filterAll">Tous</button>
+                    <button data-filter="residential" data-t="filterResidential">Habitat</button>
+                    <button data-filter="cultural" data-t="filterCultural">Culture</button>
+                    <button data-filter="detail" data-t="filterDetail">Détails</button>
+                </div>
+                <div class="gallery-grid">
+                    <button class="gallery-item wide residential" data-project="habitat" data-caption-key="habitatCaption" data-description-key="habitatText">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80" alt="Projet habitat contemporain">
+                        <span data-t="habitatName">Habitat contemporain</span>
+                    </button>
+                    <button class="gallery-item cultural" data-project="cultural" data-caption-key="culturalCaption" data-description-key="culturalText">
+                        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80" alt="Projet espace culturel">
+                        <span data-t="culturalName">Espace culturel</span>
+                    </button>
+                    <button class="gallery-item detail" data-project="material" data-caption-key="materialCaption" data-description-key="materialText">
+                        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1000&q=80" alt="Étude de matière">
+                        <span data-t="materialName">Étude de matière</span>
+                    </button>
+                    <button class="gallery-item residential" data-project="house" data-caption-key="houseCaption" data-description-key="houseText">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80" alt="Projet maison et paysage">
+                        <span data-t="houseName">Maison et paysage</span>
+                    </button>
+                    <button class="gallery-item wide cultural" data-project="urban" data-caption-key="urbanCaption" data-description-key="urbanText">
+                        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1600&q=80" alt="Projet architecture urbaine">
+                        <span data-t="urbanName">Architecture urbaine</span>
+                    </button>
+                    <button class="gallery-item detail" data-project="shadow" data-caption-key="shadowCaption" data-description-key="shadowText">
+                        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1000&q=80" alt="Jeu d’ombres architectural">
+                        <span data-t="shadowName">Jeu d’ombres</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <div class="lightbox" aria-hidden="true">
+            <button class="lightbox-close" aria-label="Fermer">×</button>
+            <img src="" alt="">
+            <p></p>
+        </div>
+        <div data-site-footer></div>
+        <script src="js/main.js"></script>
+        <script src="js/page-translations.js"></script>
+        <script src="js/project-gallery.js"></script>
+    </body>
+</html>

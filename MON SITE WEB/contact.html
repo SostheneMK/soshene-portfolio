@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SK — Contact</title>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body data-page="contact">
+        <div data-site-header></div>
+        <main>
+            <section class="contact-layout">
+                <div class="page-intro reveal">
+                    <p class="eyebrow" data-t="contactKicker">Contact</p>
+                    <h1 data-text-animate data-t="contactHeading">Parlons de votre projet.</h1>
+                    <p data-t="contactLead">Une idée, une question ou un projet à imaginer ? Écrivez-moi, je vous répondrai avec plaisir.</p>
+                    <div class="contact-details">
+                        <a href="mailto:sosthenekizinguere@outlook.com"><span class="contact-icon email-icon">✉</span>sosthenekizinguere@outlook.com</a>
+                        <a href="https://wa.me/0023672572052" class="whatsapp-link"><span class="contact-icon whatsapp-icon">◔</span>+236 72 57 20 52</a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contact-form">
+                    <label>
+                        <span data-t="name">Nom</span>
+                        <input name="name" required>
+                    </label>
+                        <label>
+                            <span data-t="email">E-mail</span>
+                            <input name="email" type="email" required>
+                        </label>
+                            <label>
+                                <span data-t="subject">Sujet</span>
+                                <input name="subject" required></label>
+                                <label>
+                                    <span data-t="message">Votre message</span>
+                                    <textarea name="message" rows="5" required></textarea>
+                                </label>
+                                <button class="button button-primary" type="submit" data-t="send">Envoyer le message ↗</button>
+                                <p class="form-status" aria-live="polite">
+                                    </p>
+                                </form>
+                            </section><section class="map-section reveal"><div><p class="eyebrow" data-t="location">Localisation</p><h2 data-t="locationHeading">Disponible pour collaborer, sur place ou à distance.</h2>
+                            </div>
+                            <iframe title="Carte de localisation" src="https://www.google.com/maps?q=architecture&output=embed" loading="lazy">
+                            </iframe>
+                        </section>
+                    </main>
+                    <div data-site-footer></div>
+                    <script src="js/main.js"></script>
+                    <script src="js/page-translations.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
